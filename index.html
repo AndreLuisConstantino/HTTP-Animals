@@ -5,32 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/16a1966fca.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dogs-cats.css">
     <link rel="icon" type="image/png" href="./img/http.png">
     <script src="./js/app.js" defer type="module"></script>
-    <script src="./js/card-choose.js"></script> 
+    <script src="./js/classes/card-http.js"></script>
     <title>HTTP Animals</title>
 </head>
 
 <body>
-    <main>
+    <main id="root">
         <div class="title__container">
             <h1>Welcome to HTTP Animals Site!</h1>
             <h3>Choose One</h3>
         </div>
         <div class="choose__container">
-            <!-- <div class="card__container">
-                <h1>titulo</h1>
-            </div> -->
-            <card-choose titulo="Dogs" cor="rgba(143, 176, 154, 0.85)"></card-choose>
+            <a href="/dogs" class="card-link" onclick="route()">
+                <div class="card__container">
+                    <h1>Dogs</h1>
+                </div>
+            </a>
             <span>or</span>
-            <card-choose titulo="Cats" cor="rgba(143, 176, 154, 0.85)"></card-choose>
-            <!-- <div class="card__container">
-                <h1>titulo</h1>
-            </div> -->
+            <a href="/cats" class="card-link" onclick="route()">
+                <div class="card__container">
+                    <h1>Cats</h1>
+                </div>
+            </a> 
         </div>
     </main>
     <footer> Copyright © | 2023 | André Luiz :)</footer>

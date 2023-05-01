@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #081621;
     --secundary-color: rgba(143, 176, 154, 0.85);
 }
@@ -10,7 +10,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
     list-style: none;
 }
 
@@ -50,7 +52,7 @@ footer {
     gap: 31px;
 }
 
-.title__container h1{
+.title__container h1 {
     font-size: 4rem;
 }
 
@@ -68,16 +70,19 @@ footer {
     align-items: center;
 }
 
-.choose__container span{
+.choose__container span {
     font-size: 2.5rem;
 }
 
-/* .card__container {
+.card-link {
     display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 400px;
+    background-color: var(--secundary-color);
+    text-decoration: none;
+    color: #fff;
     justify-content: center;
     align-items: center;
-    height: 9vh;
-    width: 18vw;
-    background-color: var(--secundary-color);
     border-radius: 10px;
-} */
+}
