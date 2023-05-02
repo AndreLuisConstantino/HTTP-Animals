@@ -7,12 +7,11 @@ class card extends HTMLElement {
         this.foto = null
         this.http = 'httpCode'
         this.status = 'status'
-        this.cor = '#fff'
     }
 
 
     static get observedAttributes() {
-        return ['titulo', 'http', 'status', 'cor']
+        return ['titulo', 'http', 'status', 'foto']
     }
 
     attributeChangedCallback(Attributes, oldValue, newValue) {
@@ -31,6 +30,7 @@ class card extends HTMLElement {
 
         const foto = document.createElement('img')
         foto.classList.add('http-image')
+        foto.src = this.foto
 
         const http = document.createElement('span')
         http.classList.add('http-name')
@@ -40,7 +40,7 @@ class card extends HTMLElement {
         status.classList.add('http-status')
         status.textContent = this.status
 
-        card.append(http, foto, http, status)
+        card.append(foto, http, status)
 
         return card
     }
@@ -64,7 +64,6 @@ class card extends HTMLElement {
         .http-image {
             height: 100%;
             width: 80%;
-            background-image: url(${this.foto});
             background-size: cover;
             background-position: center;
         }

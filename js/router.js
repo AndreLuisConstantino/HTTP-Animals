@@ -11,6 +11,7 @@ const route = async () => {
 
     const path = window.location.pathname
 
+
     const response = await fetch(routes[path])
     const html = await response.text()
 
